@@ -13,12 +13,12 @@ public class MainClass {
         System.out.print("Jabatan           : ");
         jabatan = in.next();
         
-        if(jabatan.equalsIgnoreCase("Pegawai Tetap")){
+        if(jabatan.equalsIgnoreCase("PegawaiTetap")){
             System.out.print("Mempunyai Istri (y/n) : ");
             istri = in.next();
             System.out.print("Jumlah Anak           : ");
             anak = in.nextInt();
-            PegawaiTetap PT = new PegawaiTetap(nama,jabatan,idKerja,istri,anak,thn);
+            PegawaiTetap PT = new PegawaiTetap(nama,"Pegawai Tetap",idKerja,istri,anak,thn);
             PT.HitungGaji();
             PT.Tampikan();
         }
@@ -31,10 +31,10 @@ public class MainClass {
             M.HitungGaji();
             M.Tampikan();
         }
-        else if(jabatan.equalsIgnoreCase("Pegawai Tidak Tetap")){
+        else if(jabatan.equalsIgnoreCase("PegawaiTidakTetap")){
             System.out.print("Jumlah Jam Bekerja    : ");
             jam = in.nextInt();
-            PegawaitdkTetap PTT = new PegawaitdkTetap(nama,jabatan,idKerja,"n",0,thn, jam);
+            PegawaitdkTetap PTT = new PegawaitdkTetap(nama,"Pegawai Tidak Tetap",idKerja,"n",0,thn, jam);
             PTT.HitungGaji();
             PTT.Tampilkan();
         }
