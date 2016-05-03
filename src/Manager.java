@@ -6,4 +6,7 @@ public class Manager extends Employee {
         super(n, id, j, i, a, m, x);
     }
 
+    public double getTunjanganJabatan() {
+        return 0.1 * (super.getGaji() + super.getLama() + super.getTunjangan());
+    }
 }

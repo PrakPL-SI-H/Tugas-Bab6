@@ -62,6 +62,10 @@ public class Employee {
     public int getTahunMasuk() {
         return tahunmasuk;
     }
+    
+    public int getLama(){
+        return lama;
+    }
 
     public int getGaji() {
         return gaji;
