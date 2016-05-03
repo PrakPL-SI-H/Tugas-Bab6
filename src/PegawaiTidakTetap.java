@@ -13,4 +13,13 @@ public class PegawaiTidakTetap extends Employee {
         jam = j;
     }
 
+    public double setLembur() {
+        if (jam > 10) {
+            lembur = (jam - 10) * 10000;
+        } else {
+            lembur = 0;
+        }
+        return lembur;
+    }
+
 }
