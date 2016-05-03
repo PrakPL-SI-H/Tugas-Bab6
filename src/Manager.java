@@ -13,5 +13,4 @@ public class Manager extends Employee {
     public double total() {
         return super.gajiTotal() + getTunjanganJabatan();
     }
-
 }

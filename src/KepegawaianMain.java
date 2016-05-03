@@ -12,7 +12,7 @@ public class KepegawaianMain {
         String nama = in.next();
         System.out.print("ID pegawai                         : ");
         String id = in.next();
-        System.out.print("Jabatan(Tetap,TidakTetap,Manager) : ");
+        System.out.print("Jabatan(Tetap,TidakTetap,Manager)  : ");
         String jabatan = in.next();
         System.out.print("Tahun masuk                        : ");
         int tahunmasuk = in.nextInt();
@@ -25,18 +25,30 @@ public class KepegawaianMain {
             jum_anak = in.nextInt();
         }
         if (jabatan.equalsIgnoreCase("TidakTetap")) {
-            PegawaiTidakTetap obj = new PegawaiTidakTetap(nama, id, jabatan, istri, anak, tahunmasuk, jum_anak);
+            PegawaiTidakTetap obj1 = new PegawaiTidakTetap(nama, id, jabatan, istri, anak, tahunmasuk, jum_anak);
             System.out.print("Masukkan jam kerja : ");
             int jam = in.nextInt();
             System.out.println("");
-            obj.setJamKerja(jam);
+            obj1.setJamKerja(jam);
             System.out.println("=====Informasi Pegawai=====");
             System.out.println("nama    : " + nama);
             System.out.println("id      : " + id);
             System.out.println("jabatan : " + jabatan);
-            System.out.println("gaji        : Rp." + obj.getGaji());
-            System.out.println("gaji lembur : Rp." + obj.setLembur());
-            System.out.println("total       : Rp." + obj.total());
+            System.out.println("gaji        : Rp." + obj1.getGaji());
+            System.out.println("gaji lembur : Rp." + obj1.setLembur());
+            System.out.println("total       : Rp." + obj1.total());
+        } else if (jabatan.equals("manager")) {
+            Manager obj2 = new Manager(nama, id, jabatan, istri, anak, tahunmasuk, jum_anak);
+            obj2.setJabatan(tahunmasuk);
+            System.out.println("=====Informasi Pegawai=====");
+            System.out.println("nama    : " + nama);
+            System.out.println("id      : " + id);
+            System.out.println("jabatan : " + jabatan);
+            System.out.println("gaji        : Rp." + obj2.getGaji());
+            System.out.println("bonus       : Rp." + obj2.getBonus());
+            System.out.println("tunjangan   : Rp." + obj2.getTunjangan());
+            System.out.println("tun.jabatan : Rp." + obj2.getTunjanganJabatan());
+            System.out.println("total       : Rp." + obj2.total());
         }
     }
 }

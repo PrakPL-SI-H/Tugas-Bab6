@@ -25,7 +25,7 @@ public class Employee {
         if (2016 - tahun_masuk < 5) {
             bonus = 0;
             tunjangan = 0;
-        } else if (2016 - tahun_masuk <= 6 && 2016 - tahun_masuk <= 10) {
+        } else if (2016 - tahun_masuk >= 6 && 2016 - tahun_masuk <= 10) {
             bonus = 0.05 * gaji * lama;
             tunjangan = 0;
         } else if (2016 - tahun_masuk > 10) {
@@ -62,13 +62,17 @@ public class Employee {
     public int getTahunMasuk() {
         return tahunmasuk;
     }
-    
-    public int getLama(){
+
+    public int getLama() {
         return lama;
     }
 
     public int getGaji() {
         return gaji;
+    }
+
+    public double getBonus() {
+        return bonus;
     }
 
     public double getTunjangan() {
