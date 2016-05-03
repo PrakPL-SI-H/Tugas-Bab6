@@ -6,5 +6,8 @@ public class PegawaiTetap extends Employee {
         super(n, id, j, i, a, m, x);
     }
 
-    
+    public double Total() {
+        return super.gajiTotal() + getTunjangan();
+    }
+
 }
