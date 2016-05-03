@@ -10,8 +10,10 @@ package Inheritance;
  * @author Prasetyo
  */
 public class Employee {
-    private int Idkerja;
+    private double bonus;
+    private double tunjangan;
     private String name;
+    private int Idkerja;
     private String Jabatan;
     private String Status;
     private int anak;
@@ -23,8 +25,22 @@ public class Employee {
         this.anak = anak;
         this.Jabatan=Jabatan;
         this.Tahun = Tahun;
-    System.out.println(name + Idkerja + Jabatan + Status + anak + Tahun);
-        
     }
+    public void tunjangan (){
+    if(Tahun <= 5){
+     
+    }else if(Tahun>=6 && Tahun<=10){
     
+    }else
+        System.out.println("");
+    }
+    public String Getnama(){
+    return name;
+    }
+    public String GetJabatan(){
+    return Jabatan;
+    }
+    public int GetIdKerja(){
+    return Idkerja;
+    }
 }
