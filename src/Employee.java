@@ -1,9 +1,9 @@
 package Praktikum6;
 
-/**
- *
- * @author Arif Ramadhan
- */
 public class Employee {
-    
+
+    private String name, idKerja, jabatan, istri, anak;
+    private int tahunmasuk, jumlahanak, lama, gaji = 200000;
+    private double bonus, tunjangan;
+
 }
