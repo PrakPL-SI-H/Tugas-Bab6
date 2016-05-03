@@ -1,13 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author asus
- */
 public class Employee {
+    private String name;
+    private String idKerja;
+    private String jabatan;
+    private boolean istri;
+    private boolean anak;
+    private double bonus;
+    private double salary;
+    private int lamaKerja;
+      private double totalSalary;
+    private double tunjangan ;
+    private double tunjanganIstri ;
+    private double tunjanganAnak;
+    private int jumlahAnak;
     
 }
