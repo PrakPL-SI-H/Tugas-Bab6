@@ -22,4 +22,7 @@ public class PegawaiTidakTetap extends Employee {
         return lembur;
     }
 
+    public double total() {
+        return super.getGaji() + lembur;
+    }
 }

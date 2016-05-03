@@ -63,7 +63,7 @@ public class Employee {
         return tahunmasuk;
     }
 
-    public int getgaji() {
+    public int getGaji() {
         return gaji;
     }
 
