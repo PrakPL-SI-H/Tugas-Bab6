@@ -9,4 +9,9 @@ public class Manager extends Employee {
     public double getTunjanganJabatan() {
         return 0.1 * (super.getGaji() + super.getLama() + super.getTunjangan());
     }
+
+    public double total() {
+        return super.gajiTotal() + getTunjanganJabatan();
+
+    }
 }
