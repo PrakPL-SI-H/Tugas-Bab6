@@ -8,24 +8,35 @@ public class KepegawaianMain {
         int jum_anak = 0;
         Scanner in = new Scanner(System.in);
         System.out.println("===========SISTEM INFORMASI KEPEGAWAIAN==========");
-        System.out.println("Nama                               : ");
+        System.out.print("Nama                               : ");
         String nama = in.next();
-        System.out.println("ID pegawai                         : ");
+        System.out.print("ID pegawai                         : ");
         String id = in.next();
-        System.out.println("Jabatan(Tetap,Tidak tetap,Manager) : ");
+        System.out.print("Jabatan(Tetap,TidakTetap,Manager) : ");
         String jabatan = in.next();
-        System.out.println("Tahun masuk                        : ");
+        System.out.print("Tahun masuk                        : ");
         int tahunmasuk = in.nextInt();
-        System.out.println("Istri(y/n)                         : ");
+        System.out.print("Istri(y/n)                         : ");
         String istri = in.next();
-        System.out.println("Anak(y/n)                          : ");
+        System.out.print("Anak(y/n)                          : ");
         String anak = in.next();
-        System.out.println("");
         if (anak.equalsIgnoreCase("Y")) {
             System.out.print("masukkan jumlah anak      : ");
             jum_anak = in.nextInt();
         }
-        System.out.println("");
-        
+        if (jabatan.equalsIgnoreCase("TidakTetap")) {
+            PegawaiTidakTetap obj = new PegawaiTidakTetap(nama, id, jabatan, istri, anak, tahunmasuk, jum_anak);
+            System.out.print("Masukkan jam kerja : ");
+            int jam = in.nextInt();
+            System.out.println("");
+            obj.setJamKerja(jam);
+            System.out.println("=====Informasi Pegawai=====");
+            System.out.println("nama    : " + nama);
+            System.out.println("id      : " + id);
+            System.out.println("jabatan : " + jabatan);
+            System.out.println("gaji        : Rp." + obj.getGaji());
+            System.out.println("gaji lembur : Rp." + obj.setLembur());
+            System.out.println("total       : Rp." + obj.total());
+        }
     }
 }
