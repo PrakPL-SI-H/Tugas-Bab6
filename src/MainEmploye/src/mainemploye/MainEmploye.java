@@ -48,6 +48,65 @@ public class MainEmploye {
                 b.setBonus();                        
                 b.tampilan();
                 break;
+            case 2 :
+                PegawaiTetap c = new PegawaiTetap();
+                System.out.print("Masukkan nama anda : ");
+                c.nama = in.next();
+                System.out.print("Masukkan id anda   : ");
+                c.id = in.next();
+                c.jabatan = "Pegawai Tetap (PNS)";
+                System.out.print("Masukkan Tahun Masuk : ");
+                c.masuk = in.nextInt();
+                System.out.print("Apakah anda punya istri (ya/tidak) ???  ");
+                masuk = in.next();
+                if ("ya".equals(masuk)) {
+                    c.istri = true;
+                }else if ("tidak".equals(masuk)){
+                    c.istri = false;
+                }
+                System.out.print("Apakah anda punya anak (ya/tidak) ???  ");
+                masuk = in.next();
+                if ("ya".equals(masuk)) {
+                    c.anak = true;
+                } else if ("tidak".equals(masuk)){
+                    c.anak = false;
+                }
+                System.out.print("Masukkan jumlah gaji anda per-bulan : ");
+                c.gaji = in.nextDouble();
+                c.setTunjangan();
+                c.setBonus();                        
+                c.tampilan();
+                break;
+            case 3 :
+                PegawaiTidakTetap d = new PegawaiTidakTetap();
+                System.out.print("Masukkan nama anda : ");
+                d.nama = in.next();
+                System.out.print("Masukkan id anda   : ");
+                d.id = in.next();
+                d.jabatan = "Pegawai Tidak Tetap (Non-PNS)";
+                System.out.print("Masukkan Tahun Masuk : ");
+                d.masuk = in.nextInt();
+                System.out.print("Apakah anda punya istri (ya/tidak) ???  ");
+                masuk = in.next();
+                if ("ya".equals(masuk)) {
+                    d.istri = true;
+                }else if ("tidak".equals(masuk)){
+                    d.istri = false;
+                }
+                System.out.print("Apakah anda punya anak (ya/tidak) ???  ");
+                masuk = in.next();
+                if ("ya".equals(masuk)) {
+                    d.anak = true;
+                } else if ("tidak".equals(masuk)){
+                    d.anak = false;
+                }
+                System.out.print("Masukkan jumlah gaji anda per-bulan : ");
+                d.gaji = in.nextDouble();
+                System.out.print("Masukkan Jumlah Jam Lembur : ");
+                d.jamlembur = in.nextInt();
+                d.setLemburan();
+                d.tampilan();
+                break;
         }
     }
 
