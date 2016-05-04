@@ -7,6 +7,7 @@ public class Employee {
     String jabatan;
     boolean istri;
     boolean anak;
+    String punya;
     int masuk;
     double bonus;
     double tunjangan;
@@ -39,19 +40,30 @@ public class Employee {
         return gaji;
     }
 
-    public void tampilan (){
+    public String setBenar() {
+        if (istri == true) {
+            punya = "ya";
+        } else if (anak == true) {
+            punya = "ya";
+        } else {
+            punya = "tidak";
+        }
+        return punya;
+    }
+
+    public void tampilan() {
         System.out.println("====== >> Data Pegawai << ======");
         System.out.println("");
         System.out.println("================================");
-        System.out.println("||  Nama Pegawai    : "+nama);
-        System.out.println("||  ID Pegawai      : "+id);
-        System.out.println("||  Jabatan Pegawai : "+jabatan);
-        System.out.println("||  Mempunyai istri : "+istri);
-        System.out.println("||  Mempunyai anak  : "+anak);
-        System.out.println("||  Tahun Masuk     : "+masuk);
-        System.out.println("||  Gaji Sebesar    : "+gaji);
-        System.out.println("||  Besar Tunjangan : "+tunjangan);
-        System.out.println("||  Besar Bonus     : "+bonus);
+        System.out.println("||  Nama Pegawai    : " + nama);
+        System.out.println("||  ID Pegawai      : " + id);
+        System.out.println("||  Jabatan Pegawai : " + jabatan);
+        System.out.println("||  Mempunyai istri : " + setBenar());
+        System.out.println("||  Mempunyai anak  : " + setBenar());
+        System.out.println("||  Tahun Masuk     : " + masuk);
+        System.out.println("||  Gaji Sebesar    : " + gaji+",-");
+        System.out.println("||  Besar Tunjangan : " + tunjangan+",-");
+        System.out.println("||  Besar Bonus     : " + bonus+",-");
         System.out.println("================================");
     }
 }

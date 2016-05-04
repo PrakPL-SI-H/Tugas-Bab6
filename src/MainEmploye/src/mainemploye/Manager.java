@@ -20,17 +20,17 @@ public class Manager extends Employee {
     @Override
     public double setTunjangan() {
         tunjanganjabatan = 0.1*gaji;
-        if (istri == true) {
-            if (anak == true) {
+        if (istri = true) {
+            if (anak = true) {
                 tunjangan = gaji * 0.25;
                 gaji = gaji + tunjangan + tunjanganjabatan;
             }
         }
-        else if (anak == true) {
+        else if (anak = true) {
             tunjangan = gaji * 0.15;
             gaji = gaji + tunjangan + tunjanganjabatan;
         }
-        else if (istri == true){
+        else if (istri = true){
             tunjangan = gaji * 0.1;
                 gaji = gaji + tunjangan + tunjanganjabatan;
         }
