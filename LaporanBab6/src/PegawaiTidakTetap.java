@@ -17,5 +17,14 @@ public class PegawaiTidakTetap extends Employee {
     public int getHariKerja(){
         return hariKerja;
     }
-    
+     @Override
+      public double getSalary(){
+        double pegawaiTidakTetapSalary = super.salary;
+        double uangLembur = 0;
+        if(jamKerja > 10){
+            uangLembur = ((jamKerja - 10) * 10000) * hariKerja;
+        }
+        double totalSalary = pegawaiTidakTetapSalary + uangLembur;
+    return totalSalary;
+    }
 }
