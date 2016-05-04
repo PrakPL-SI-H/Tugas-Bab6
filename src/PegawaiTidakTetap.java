@@ -19,7 +19,7 @@ public class PegawaiTidakTetap extends Employee {
 
             gaji += ((10000 * (jam - 10)) * 30);
         } else {
-            gaji = 2000000;
+            gaji = 2000000; //jika tidak terpenuhi syarat diatas gaji =2000000
         }
     }
 }
