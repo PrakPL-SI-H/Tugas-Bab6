@@ -11,11 +11,12 @@ public class Main {
         System.out.println("");
         int bnykAnak = 0;
         System.out.print("Nama                  : ");
-        String nama = input.next();
+        String nama = input.nextLine();
         System.out.print("ID                    : ");
         String id = input.next();
+        input.nextLine();
         System.out.print("Jabatan               : ");
-        String jabatan = input.next();
+        String jabatan = input.nextLine();
         System.out.print("Mulai Bekerja Tahun   : ");
         int TahunMasuk = input.nextInt();
         System.out.print("Mempunyai istri(Y/N)  : ");
@@ -27,7 +28,7 @@ public class Main {
             System.out.print("Mempunyai berapa anak : ");
             bnykAnak = input.nextInt();
         }
-        if (jabatan.equalsIgnoreCase("Selain_PNS")) {
+        if (jabatan.equalsIgnoreCase("Non Pns")) {
             System.out.println("Total jam kerja: ");
             int jamkerja = input.nextInt();
             Non_Pns pegawai1 = new Non_Pns(nama, id,jabatan, istri, anak, bnykAnak, TahunMasuk);
@@ -35,14 +36,11 @@ public class Main {
             System.out.println();
             System.out.println("       DATA GAJI ANDA       ");
             System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
-            System.out.println("Nama Pegawai : "
-                    + pegawai1.getNama());
+            System.out.println("Nama Pegawai : " + pegawai1.getNama());
             System.out.println("Jabatan      : " + jabatan);
             System.out.println();
-            System.out.println("Gaji Pokok Anda   :Rp  "
-                    + pegawai1.Gaji);
-            System.out.println("Gaji lembur Anda  :Rp  "
-                    + pegawai1.getGajiLembur());
+            System.out.println("Gaji Pokok Anda   :Rp  " + pegawai1.Gaji);
+            System.out.println("Gaji lembur Anda  :Rp  " + pegawai1.getGajiLembur());
             System.out.println("============================");
             System.out.println();
             System.out.println("Total Gaji yang anda peroleh    :Rp  " + pegawai1.getGaji());
@@ -50,17 +48,14 @@ public class Main {
             System.out.println();
         }
         if (jabatan.equalsIgnoreCase("PNS")) {
-            Pns staff = new Pns(nama, id, jabatan, istri, anak,
-                    bnykAnak, TahunMasuk);
-            int lama = 2015 - TahunMasuk;
+            Pns staff = new Pns(nama, id, jabatan, istri, anak,bnykAnak, TahunMasuk);
+            int lama = 2016 - TahunMasuk;
             staff.tunjanganDanBonus(lama);
             System.out.println();
             System.out.println("         DATA GAJI ANDA     ");
             System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
-            System.out.println("Nama Staff          : "
-                    + staff.getNama());
-            System.out.println("Jabatan             : "
-                    + jabatan);
+            System.out.println("Nama Staff          : " + staff.getNama());
+            System.out.println("Jabatan             : " + jabatan);
             System.out.println();
             System.out.println("Gaji Pokok Anda           :Rp  " + staff.Gaji);
             System.out.println("Tunjangan Anda            :Rp  " + staff.getTunjangan());
@@ -72,17 +67,14 @@ public class Main {
             System.out.println();
         }
         if (jabatan.equalsIgnoreCase("Manager")) {
-            Manager atasan = new Manager(nama, id, jabatan,
-                    istri, anak, bnykAnak, TahunMasuk);
-            int lama = 2015 - TahunMasuk;
+            Manager atasan = new Manager(nama, id, jabatan, istri, anak, bnykAnak, TahunMasuk);
+            int lama = 2016 - TahunMasuk;
             atasan.tunjanganDanBonus(lama);
             System.out.println();
             System.out.println("       DATA GAJI ANDA       ");
             System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-_-_");
-            System.out.println("Nama Manager        : "
-                    + atasan.getNama());
-            System.out.println("Jabatan             : "
-                    + jabatan);
+            System.out.println("Nama Manager        : " + atasan.getNama());
+            System.out.println("Jabatan             : " + jabatan);
             System.out.println();
             System.out.println("Gaji Pokok Anda           :Rp  " + atasan.Gaji);
             System.out.println("Tunjangan Anda            :Rp  " + atasan.getTunjangan());
