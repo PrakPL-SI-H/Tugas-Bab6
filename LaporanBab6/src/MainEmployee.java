@@ -92,5 +92,49 @@ public class MainEmployee {
                 countNonPNS++;
                 break;
         }
+        System.out.println("=====================================================");
+        System.out.printf("%-12s \n", "\t\tDATA PEKERJA PT FORZA");
+        System.out.println("=====================================================\n");
+        for (int i = 0; i < countManager; i++) {
+            System.out.println("Nama\t\t\t: " + man[i].getName());
+            System.out.println("ID Kerja\t\t: " + man[i].getIDKerja());
+            System.out.println("Jabatan\t\t\t: " + man[i].getJabatan());
+            System.out.println("Istri\t\t\t: " + man[i].getIstri());
+            System.out.println("Anak\t\t\t: " + man[i].getAnak());
+            if (man[i].getAnak().equals("Ada")) {
+                man[i].jumAnak();
+            }
+            System.out.println("Masuk Kerja Tahun\t: " + man[i].getHireYear());
+            System.out.println("Gaji Yang Diterima\t: Rp. " + man[i].getSalary());
+            System.out.println("=====================================================");
+        }
+        for (int i = 0; i < countPNS; i++) {
+            System.out.println("Nama\t\t\t: " + PNS[i].getName());
+            System.out.println("ID Kerja\t\t: " + PNS[i].getIDKerja());
+            System.out.println("Jabatan\t\t\t: " + PNS[i].getJabatan());
+            System.out.println("Istri\t\t\t: " + PNS[i].getIstri());
+            System.out.println("Anak\t\t\t: " + PNS[i].getAnak());
+            if (PNS[i].getAnak().equals("Ada")) {
+                PNS[i].jumAnak();
+            }
+            System.out.println("Masuk Kerja Tahun\t: " + PNS[i].getHireYear());
+            System.out.println("Gaji Yang Diterima\t: Rp. " + PNS[i].getSalary());
+            System.out.println("=====================================================");
+        }
+        for (int i = 0; i < countNonPNS; i++) {
+            System.out.println("Nama\t\t\t: " + nonPNS[i].getName());
+            System.out.println("ID Kerja\t\t: " + nonPNS[i].getIDKerja());
+            System.out.println("Jabatan\t\t\t: " + nonPNS[i].getJabatan());
+            System.out.println("Istri\t\t\t: " + nonPNS[i].getIstri());
+            System.out.println("Anak\t\t\t: " + nonPNS[i].getAnak());
+            if (nonPNS[i].getAnak().equals("Ada")) {
+                nonPNS[i].jumAnak();
+            }
+            System.out.println("Masuk Kerja Tahun\t: " + nonPNS[i].getHireYear());
+            System.out.println("Banyak Hari Kerja\t: " + nonPNS[i].getHariKerja());
+            System.out.println("Banyak Jam Kerja\t: " + nonPNS[i].getJamKerja());
+            System.out.println("Gaji Yang Diterima\t: Rp. " + nonPNS[i].getSalary());
+            System.out.println("=====================================================");
+        }
     }
 }
