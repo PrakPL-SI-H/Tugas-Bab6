@@ -15,6 +15,11 @@ public class PegawaiTidakTetap extends Employee {
     }
 
     public void setBonus(int jam) { //paramter hanya jam sebagai penentu jumlah bonus
-        
+        if (jam > 10) {
+
+            gaji += ((10000 * (jam - 10)) * 30);
+        } else {
+            gaji = 2000000;
+        }
     }
 }
