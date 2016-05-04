@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tugas.bab6;
 
-/**
- *
- * @author HP
- */
-public class PegawaiTidakTetap {
+public class PegawaiTidakTetap extends Employee {
+
+   private double gl; //Gaji Lembur
+   
+   public void GajiLembur(int jam){
+       if(jam > 10){
+           gl = jam * 10000;
+           jumlah += gl;
+       }
+   }
     
 }
