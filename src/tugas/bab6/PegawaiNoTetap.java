@@ -19,4 +19,14 @@ package laporan;
     public PegawaiNoTetap(String nama, String jabatan, String idKerja, String istri, int anak, int thn, int jam) {
         super(nama, jabatan, idKerja, istri, anak, thn);
     }
+    public void HitungGaji(){
+        if (jam > 10){
+            lembur = jam - 10;
+            this.gaji = gajiDasar+ (10000 * lembur);
+        }
+        else{
+            this.gaji = gajiDasar;
+        }
+    }
+    
  }
