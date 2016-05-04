@@ -1,21 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mainemploye;
 
-/**
- *
- * @author ASUS-A455L
- */
+import java.util.Scanner;
+
 public class MainEmploye {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner in = new Scanner(System.in);
+        int pil;
+        Employee a = new Employee();
+        System.out.println("Selamat Datang di program Empolyee");
+        System.out.println("Silahkan Masukkan data anda.......");
+        System.out.println("");
+        System.out.println("======= >> DATA PEGAWAI << =======");
+        System.out.print("Masukkan nama anda : ");
+        a.nama = in.next();
+        System.out.print("Masukkan id anda   : ");
+        a.id = in.next();
+        System.out.print(">> Pilih Jabatan <<");
+        System.out.println("1. Manajer");
+        System.out.println("2. Pegawai Tetap (PNS)");
+        System.out.println("3. Pegawai Tidak Tetap (Non-PNS)");
+        System.out.print("Masukkan pilihan   :");
+        pil = in.nextInt();
+        switch (pil) {
+            case 1:
+                Manager b = new Manager();
+                b.jabatan = "Manajer";
+                System.out.print("Masukkan Tahun Masuk : ");
+                b.masuk = in.nextInt();
+                System.out.print("Apakah anda punya istri (true/false) ???  ");
+                b.istri = in.hasNextBoolean();
+                System.out.print("Apakah anda punya anak (true/false) ???  ");
+                b.anak = in.hasNextBoolean();
+                System.out.print("Masukkan jumlah gaji anda per-bulan : ");
+                b.gaji = in.nextDouble();
+                b.tampilan();
+                break;
+        }
     }
-    
+
 }
