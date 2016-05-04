@@ -36,30 +36,33 @@ public class Employee {
 //        this.masuk = masuk;
 //    }
 //    
-    public double setBonus(){
-        if  (masuk < 2011 && masuk >2005){
-            bonus = 0.05*gaji;
+    public double setBonus() {
+        if (masuk < 2011 && masuk > 2005) {
+            bonus = 0.05 * gaji;
             gaji = gaji + bonus;
-        }
-        else if (masuk < 2005){
-            bonus = 0.1*gaji;
+        } else if (masuk < 2005) {
+            bonus = 0.1 * gaji;
             gaji = gaji + bonus;
         }
         return gaji;
     }
-    
-    public double setTunjangan(){
-        if (istri == true){
-            tunjangan = gaji*0.1;
+
+    public double setTunjangan() {
+        if (istri == true) {
+            if (anak == true) {
+                tunjangan = gaji * 0.25;
+                gaji = gaji + tunjangan;
+            }
+        }
+        else if (anak == true) {
+            tunjangan = gaji * 0.15;
             gaji = gaji + tunjangan;
         }
-        if (anak == true){
-            tunjangan = gaji*0.15;
-            gaji = gaji + tunjangan;
+        else if (istri == true){
+            tunjangan = gaji * 0.1;
+                gaji = gaji + tunjangan;
         }
         return gaji;
     }
-    
-    
-    
+
 }
