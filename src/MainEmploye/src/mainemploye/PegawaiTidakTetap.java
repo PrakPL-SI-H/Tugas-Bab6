@@ -1,14 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mainemploye;
 
-/**
- *
- * @author ASUS-A455L
- */
-public class PegawaiTidakTetap {
-    
+public class PegawaiTidakTetap extends Employee {
+
+    private double lemburan;
+    int jamlembur;
+
+    public double setLemburan() {
+        if (jamlembur > 10) {
+            gaji = gaji + (10000 * jamlembur);
+        }
+        return gaji;
+    }
 }
