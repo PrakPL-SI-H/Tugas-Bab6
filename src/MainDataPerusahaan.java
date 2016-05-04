@@ -15,6 +15,7 @@ public class MainDataPerusahaan {
 
     public static void main(String[] args) {
         MainDataPerusahaan go = new MainDataPerusahaan();
+        go.showTime();
         
 
     }
