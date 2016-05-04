@@ -13,6 +13,7 @@ public class Manager extends Employee {
         gaji = 5000000; //gaji default manager =5000000
     }
 //penentu jumlah bonus merupakan tahun,status,dan anak
+//logika if else untuk menggolongkan jumlah gaji
     public void setBonus(int thn, String status, int anak) {
         if(thn<5){
             gaji=5000000;
