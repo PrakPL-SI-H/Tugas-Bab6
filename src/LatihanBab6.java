@@ -74,4 +74,43 @@ System.out.println("Total gaji : "+gj);
 }
 
 //========================================================================================================================
+
+public class Manager extends Employee {
+
+    public Manager(String idker, String nama, String jabatan, String status, int tahunmasuk, int lamajam, int anak) {
+        super(idker, nama, jabatan, status, tahunmasuk, lamajam, anak);
+        gj = 500000;
+    }
+
+    public void setBonus(int tahun, String status, int anak) {
+        if (tahun > 10) {
+            gj += (thnmasuk * 0.1) + (thnmasuk * 0.1) + (0.1 * (gj + thnmasuk + (thnmasuk * 0.1)));
+        } else if (tahun < 11 && tahun > 5) {
+            gj += (thnmasuk * 0.05) + (0.1 * (gj + thnmasuk + (thnmasuk * 0.1)));
+        } else {
+            gj += (0.1 * (gj + thnmasuk + (thnmasuk * 0.1)));
+        }
+        if (status.equalsIgnoreCase("kawin") && anak == 0) {
+            gj += (0.1 * ((gj + thnmasuk) + (thnmasuk * 0.1)));
+        } else if (status.equalsIgnoreCase("kawin") && anak < 4) {
+            gj += ((0.15 * (gj + thnmasuk + (thnmasuk * 0.1))) * anak) + (0.1 * ((gj + thnmasuk) + (thnmasuk * 0.1)));
+        } else if (status.equalsIgnoreCase("kawin") && anak > 3) {
+            gj += ((0.15 * (gj + thnmasuk + (thnmasuk * 0.1))) * 3) + (0.1 * ((gj + thnmasuk) + (thnmasuk * 0.1)));
+        } else if (status.equalsIgnoreCase("single") && anak < 4) {
+            gj += ((0.15 * (gj + thnmasuk + (thnmasuk * 0.1))) * anak);
+        } else if (status.equalsIgnoreCase("single") && anak > 3) {
+            gj += ((0.15 * (gj + thnmasuk + (thnmasuk * 0.1))) * 3);
+        } else {
+            gj += 0;
+        }
+    }
+
+    public void totGaj() {
+        System.out.println("Total gaji : " + gj);
+    }
+
+}
+
+//===============================================================================================================
+
  
