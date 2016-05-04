@@ -1,4 +1,3 @@
-
 package tugas.bab6;
 
 public class Pns extends Employee {
@@ -8,6 +7,7 @@ public class Pns extends Employee {
         super(nama, id, jabatan, istri, anak, bnykAnak, tahunMasuk);
     }
 
+    @Override
     public double getGaji() {
         return super.getGaji();
     }

@@ -1,4 +1,3 @@
-
 package tugas.bab6;
 
 import java.util.Scanner;

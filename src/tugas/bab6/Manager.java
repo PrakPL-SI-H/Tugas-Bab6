@@ -1,4 +1,3 @@
-
 package tugas.bab6;
 
 public class Manager extends Employee {
@@ -15,6 +14,7 @@ public class Manager extends Employee {
         + Tunjangan);
     }
 
+    @Override
     public double getGaji() {
         double gajiManager = super.getGaji();
         return gajiManager + gettunjanganJabatan();

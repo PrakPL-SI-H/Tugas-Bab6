@@ -1,4 +1,3 @@
-
 package tugas.bab6;
 
 public class Non_Pns extends Employee {
@@ -23,6 +22,7 @@ public class Non_Pns extends Employee {
         return GajiLembur;
     }
 
+    @Override
     public double getGaji() {
         return Gaji + getGajiLembur();
     }
