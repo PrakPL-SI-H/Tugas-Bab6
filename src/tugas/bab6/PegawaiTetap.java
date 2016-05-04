@@ -47,4 +47,15 @@ public class PegawaiTetap extends Employee{
             }
         }
     }
-}
+public void Tampikan(){
+        System.out.println("TERIMAKASIH TELAH MENGISI DATA");
+        System.out.println("Inilah rincian tentang anda");
+        System.out.println("_____=====^^^^^=====^^^^^=====_____");
+        System.out.println("Nama anda        : "+nama);
+       System.out.println("Jabatan anda      : "+jabatan);
+        System.out.println("ID anda          : "+ID);
+        System.out.println("Tahun Masuk anda : "+thn);
+        System.out.println("Gaji anda        : Rp."+gajiPT+"/Bulan");
+        System.out.println("_____=====^^^^^=====^^^^^=====_____");
+    }
+ }
