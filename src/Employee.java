@@ -25,6 +25,24 @@ public class Employee {
         this.anak = anak;
         this.thn = thn;
     }
+    //pembuatan method getter
+    public double getGaji() {
+        return gaji;
+    }
+    
+
+    public String getNama() {
+        return nama;
+    }
+    public String getId() {
+        return id;
+    }
+
+    public String getJab() {
+        return jabatan;
+    }
+
+    
 
     
 }
