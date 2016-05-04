@@ -18,7 +18,14 @@ public class Employee {
      public int anak, thn;
      public final int gajiDasar = 6000000;
      
-   
+   public Employee (String nama, String jabatan, String idKerja, String istri, int anak, int thn){
+         this.nama = nama;
+         this.jabatan = jabatan;
+         this.ID = idKerja;
+         this.istri = istri;
+         this.anak = anak;
+         this.thn = thn;
+    }
     
     }   
  
