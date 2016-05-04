@@ -7,7 +7,9 @@ public class Employee {
     String Istri;
     int Anak;
     int Tahun;
-    final int GajiPokok = 5000000;
+    final int GajiPokokManajer = 8000000;
+    final int GajiPokokPegTetap = 5000000;
+    final int GajiPokokPegTakTetap = 3000000;
     
     public Employee(String Nama, String Jabatan, String Id, String Istri, int Anak, int Tahun) {
         this.Nama = Nama;

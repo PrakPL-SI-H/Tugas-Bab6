@@ -12,7 +12,7 @@ public class Manajer extends Employee {
     public void Tunjangan() {
         LamaKerja = 2016 - Tahun;
         if (LamaKerja < 5) {
-            Gaji = 5000000;
+            Gaji = GajiPokokManajer;
         } else if (LamaKerja >= 6 && LamaKerja <= 10) {
             Gaji += (Gaji * (0.05 / 100));
         } else {
