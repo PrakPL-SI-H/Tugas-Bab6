@@ -1,17 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author irwin deriyan
- */
-public class LatihanBab1 {
-    public static void main(String[] args) {
-        System.out.println("tess");
-        
-        
-    }
+public class Employee {
+
     
+public String idkerja, nama, jabatan, status;
+public int thnmasuk, lamajam, anak;
+public static double gj;
+public Employee(String idker, String nama, String jabatan, String status, int tahunmasuk, int lamajam, int anak) {
+this.idkerja = idker;
+this.nama = nama;
+this.jabatan = jabatan;
+this.status = status;
+this.thnmasuk = tahunmasuk;
+this.lamajam = lamajam;
+this.anak = anak;
 }
+
+    }
+ 
