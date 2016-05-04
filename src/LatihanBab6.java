@@ -53,4 +53,25 @@ class PegawaiTetap extends Employee {
 
 }
 //=====================================================================================================================================================
+
+public class Magang extends Employee {
+public Magang(String idker, String nama, String jabatan, String status, int tahunmasuk, int lamajam, int anak) {
+super(idker, nama, jabatan, status, tahunmasuk, lamajam, anak);
+gj = 100000;
+}
+public void setBonus (int lamajam){
+if (lamajam > 10){
+gj += 10000*lamajam;
+}
+else {
+gj += 0;
+}
+}   
+public void totGaj(){
+System.out.println("Total gaji : "+gj);
+}
+    
+}
+
+//========================================================================================================================
  
