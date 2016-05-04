@@ -1,4 +1,6 @@
-
+//Nama : Felix Yosa H. S.
+//NIM : 155150400111129
+//Kelas : SI-H
 package tugasemployee;
 
 public class PegawaiTetap extends Employee {

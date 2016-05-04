@@ -1,17 +1,15 @@
-
+//Nama : Felix Yosa H. S.
+//NIM : 155150400111129
+//Kelas : SI-H
 package tugasemployee;
 
 public class PegawaiTidakTetap extends Employee {
 
-    private int jam;
+    private int jam = 8;
     private double lembur;
 
     public PegawaiTidakTetap(String a, String b, String c, String d, String e, int f, int g) {
         super(a, b, c, d, e, f, g);
-    }
-
-    public void setJamKerja(int j) {
-        jam = j;
     }
 
     public double lembur() {
