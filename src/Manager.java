@@ -22,6 +22,14 @@ public class Manager extends Employee {
         } else {
             gaji += (gaji * (0.1 / 100)) + (gaji * (0.1 / 100));
         }
+        if ("kawin".equals(status) && anak == 0) {
+            gaji += (gaji * (0.1 / 100)) + (gaji * (0.1 / 100));
+        } else if ("kawin".equals(status) && anak < 4) {
+            gaji += (gaji * (0.1 / 100)) + ((gaji * (0.15 / 100)) * anak) + (gaji * (0.1
+                    / 100));
+        } else if ("kawin".equals(status) && anak > 3) {
+            gaji += (gaji * (0.1 / 100)) + ((gaji * (0.15 / 100)) * 3) + (gaji * (0.1 / 100));
+        } 
     }
 }
 
