@@ -60,5 +60,11 @@ public class MainDataPerusahaan {
                 daftar += "| " + go.getId() + "\t\t|" + go.getNama()+ "\t\t| " + go.getJab() + "\t\t| Rp."+ pegt + "\t\t| Rp." + go.getGaji() + "\t|\n";
             }
         }
+        System.out.println("");
+        System.out.println("\t\t\t===============DAFTAR TAMBAHAN DATA BARU===============");
+        System.out.println("\t\t\t    ===========GAJI PEGAWAI PT.BafarCorp===========");
+        System.out.println(daftar);
+        System.out.println("|=======================================================================================================|");
+
     }
 }
