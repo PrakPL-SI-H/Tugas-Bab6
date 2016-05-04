@@ -21,7 +21,7 @@ public class pegawaiTetap extends Employee {
         }
         if (istri.equalsIgnoreCase("ya") && anak == 0) {
             gaji += (gaji * (0.1 * tahun));
-        } else if (istri.equalsIgnoreCase("ya") && anak < 4) {
+        } else if (istri.equalsIgnoreCase("ya") && anak <= 3) {
             gaji += (gaji * (0.1 * tahun)) + (gaji * (0.15 * tahun) * anak);
         } else if (istri.equalsIgnoreCase("ya") && anak > 3) {
             gaji += ((gaji * (0.1 * tahun)) + (gaji * (0.15 * tahun) * 3));
@@ -32,5 +32,6 @@ public class pegawaiTetap extends Employee {
 
     public void displayMessage() {
         System.out.println("Total gajinya adalah " + gaji);
+        System.out.println("");
     }
 }

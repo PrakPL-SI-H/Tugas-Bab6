@@ -21,7 +21,7 @@ public class Manager extends Employee {
         }
         if (istri.equalsIgnoreCase("ya") && anak == 0) {
             gaji += (gaji * (0.1) * tahun) + (gaji * (0.1) * tahun);
-        } else if (istri.equalsIgnoreCase("ya") && anak < 4) {
+        } else if (istri.equalsIgnoreCase("ya") && anak <=3 ) {
             gaji += (gaji * (0.1) * tahun) + (gaji * (0.15) * anak * tahun) + (gaji * (0.1) * tahun);
         } else if (istri.equalsIgnoreCase("ya") && anak > 3) {
             gaji += ((gaji * (0.1) * tahun) + (gaji * (0.15) * 3 * tahun) + (gaji * (0.1) * tahun));

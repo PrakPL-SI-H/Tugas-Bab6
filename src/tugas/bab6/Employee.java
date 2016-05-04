@@ -43,7 +43,7 @@ public class Employee { //superclassnya
         return tahunMasuk;
     }
 
-    public double getGaji() {
+    public int getGaji() {
         return gaji;
     }
 }
