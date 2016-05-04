@@ -28,7 +28,7 @@ public class Employee {
         if (tahunkerja < 5) {
             bonus = 0;
             tunjangan = 0;
-        } else if (tahunkerja <= 6 && tahunkerja <= 10) {
+        } else if (tahunkerja <= 10) {
             bonus = 0.05 * gaji * tahunkerja;
             tunjangan = 0;
         } else if (tahunkerja > 10) {
