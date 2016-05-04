@@ -44,6 +44,11 @@ public class MainDataPerusahaan {
             System.out.print("Jumlah Anak                          : ");
             int anak = in.nextInt();
             //seleksi kondisi sesuai dengan jabatannya:
-            
+            if ("Manager".equals(jab)) {
+                Manager go = new Manager(name, jab, id, status, anak, thn);
+                go.setBonus(thn, status, anak);
+                daftar += "| " + go.getId() + "\t\t|" + go.getNama()+ "\t\t| " + go.getJab() + "\t\t| Rp." + gman+ "\t\t| Rp." + go.getGaji() + "\t|\n";
+            } 
     }
-}}
+}
+}
