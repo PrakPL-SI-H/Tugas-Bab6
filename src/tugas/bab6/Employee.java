@@ -22,5 +22,27 @@ public class Employee {
         lama = 2016 - tahun_masuk;
     }
 
+    public void hitung(int tahun_masuk) {
+        if (2015 - tahun_masuk < 5) {
+            bonus = 0;
+            tunjangan = 0;
+        } else if (2015 - tahun_masuk <= 6 && 2015 - tahun_masuk <= 10) {
+            bonus = 0.05 * gaji * lama;
+            tunjangan = 0;
+        } else if (2015 - tahun_masuk > 10) {
+            bonus = 0.1 * gaji * lama;
+            tunjangan = 0.1 * gaji * lama;
+        }
+        if (istri.equalsIgnoreCase("y") && anak.equalsIgnoreCase("y")) {
+            tunjangan += (0.1 * (gaji + tunjangan)) + ((0.15 * jumlah_anak) * (tunjangan + gaji));
+        } else if (istri.equalsIgnoreCase("y") && anak.equalsIgnoreCase("n")) {
+            tunjangan += (0.1 * (gaji + tunjangan));
+        } else if (istri.equalsIgnoreCase("n") && anak.equalsIgnoreCase("y")) {
+            tunjangan += ((0.15 * jumlah_anak) * (tunjangan + gaji));
+        } else if (istri.equalsIgnoreCase("n") && anak.equalsIgnoreCase("n")) {
+            tunjangan = tunjangan;
+        }
+    }
+
 
 }
