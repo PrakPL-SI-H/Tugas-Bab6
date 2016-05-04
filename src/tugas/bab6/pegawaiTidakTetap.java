@@ -11,5 +11,7 @@ public class pegawaiTidakTetap extends Employee{
             gaji+=0;
         }
     }
-
+    public void displayMessage(){
+        System.out.println("Total gajinya adalah "+gaji);
+    }
 }
