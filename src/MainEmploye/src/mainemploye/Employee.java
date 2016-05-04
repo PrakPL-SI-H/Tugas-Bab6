@@ -12,30 +12,6 @@ public class Employee {
     double tunjangan;
     double gaji;
 
-//    public void setNama(String nama) {
-//        this.nama = nama;
-//    }
-//
-//    public void setId(String id) {
-//        this.id = id;
-//    }
-//
-//    public void setJabatan(String jabatan) {
-//        this.jabatan = jabatan;
-//    }
-//
-//    public void setIstri(boolean istri) {
-//        this.istri = istri;
-//    }
-//
-//    public void setAnak(boolean anak) {
-//        this.anak = anak;
-//    }
-//
-//    public void setMasuk(int Masuk) {
-//        this.masuk = masuk;
-//    }
-//    
     public double setBonus() {
         if (masuk < 2011 && masuk > 2005) {
             bonus = 0.05 * gaji;
@@ -53,16 +29,29 @@ public class Employee {
                 tunjangan = gaji * 0.25;
                 gaji = gaji + tunjangan;
             }
-        }
-        else if (anak == true) {
+        } else if (anak == true) {
             tunjangan = gaji * 0.15;
             gaji = gaji + tunjangan;
-        }
-        else if (istri == true){
+        } else if (istri == true) {
             tunjangan = gaji * 0.1;
-                gaji = gaji + tunjangan;
+            gaji = gaji + tunjangan;
         }
         return gaji;
     }
 
+    public void tampilan (){
+        System.out.println("====== >> Data Pegawai << ======");
+        System.out.println("");
+        System.out.println("================================");
+        System.out.println("||  Nama Pegawai    : "+nama);
+        System.out.println("||  ID Pegawai      : "+id);
+        System.out.println("||  Jabatan Pegawai : "+jabatan);
+        System.out.println("||  Mempunyai istri : "+istri);
+        System.out.println("||  Mempunyai anak  : "+anak);
+        System.out.println("||  Tahun Masuk     : "+masuk);
+        System.out.println("||  Gaji Sebesar    : "+gaji);
+        System.out.println("||  Besar Tunjangan : "+tunjangan);
+        System.out.println("||  Besar Bonus     : "+bonus);
+        System.out.println("================================");
+    }
 }
