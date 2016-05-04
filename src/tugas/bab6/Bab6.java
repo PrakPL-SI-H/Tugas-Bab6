@@ -1,34 +1,57 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Inheritance;
-
-/**
- *
- * @author Prasetyo
- */
 public class Bab6 {
-
-    public static void main(String[] args) {
-        Employee manager = new Employee("Budi",2121,"manajer","tidak",0,2014);
-        Employee Pekerjatetap = new Employee("Santoso",2441,"OB","iya",3,2010);
-        Employee Pekerjatetap1 = new Employee("Aji", 2442,"Security","iya",4,2011);
-        Employee Pekerjatetap2 = new Employee("Anto", 2443,"Teknisi","iya",2,2012);
-        Employee Pekerjatetap3 = new Employee("Salim", 2444,"Sopir","iya",1,2013);
-        Employee Pekerjatetap4 = new Employee("Santi",2445,"Sekertaris","iya",2,2012);
-        Employee Pekerjatetap5 = new Employee("Santoso",2446,"OB","iya",3,2010);
-        Employee Pekerjatetap6 = new Employee("Ayu", 2447,"OB","iya",5,2011);
-        Employee Pekerjatetap7 = new Employee("Jaya", 2448,"Teknisi","iya",0,2012);
-        Employee Pekerjatetap8 = new Employee("Sandy", 2449,"Sopir","iya",1,2013);
-        Employee Pekerjatetap9 = new Employee("Dewi",2450,"Sekertaris","iya",2,2012);
-        Employee Pekerjatetap10 = new Employee("Sri",2451,"OB","iya",3,2010);
-        Employee Pekerjatidaktetap = new Employee("Ahmad", 2452,"Security","iya",5,2011);
-        Employee Pekerjatidaktetap2 = new Employee("Deny", 2453,"Teknisi","iya",2,2012);
-        Employee Pekerjatidaktetap3 = new Employee("Sari", 2454,"Sekertaris","iya",4,2013);
-        Employee Pekerjatidaktetap4 = new Employee("Sinta",2455,"Sekertaris","iya",2,2014);
-        Employee Pekerjatidaktetap5 = new Employee("Rendy",2456,"Teknisi","iya",2,2015);
-    }
-    
+    public static void main(String[] args){
+        System.out.println("=============================");    
+        Employee manager = new Manager("Budi",1121,"manajer","ya",3,2000);
+        manager.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap = new PekerjaTetap("Santoso",1441,"OB","ya",3,2010);
+        Pekerjatetap.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap1 = new PekerjaTetap("Aji", 1442,"Security","ya",4,2001);
+        Pekerjatetap1.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap2 = new PekerjaTetap("Anto", 1443,"Teknisi","ya",0,2002);
+        Pekerjatetap2.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap3 = new PekerjaTetap("Salim", 1444,"Sopir","ya",1,2008);
+        Pekerjatetap3.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap4 = new PekerjaTetap("Santi",1445,"Sekertaris","ya",2,1999);
+        Pekerjatetap4.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap5 = new PekerjaTetap("Santoso",2446,"OB","tidak",0,2010);
+        Pekerjatetap5.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap6 = new PekerjaTetap("Ayu",1447,"OB","ya",5,2001);
+        Pekerjatetap6.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap7 = new PekerjaTetap("Jaya",1448,"Teknisi","ya",0,2006);
+        Pekerjatetap7.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap8 = new PekerjaTetap("Sandy",1449,"Sopir","ya",1,2003);
+        Pekerjatetap8.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap9 = new PekerjaTetap("Dewi",1450,"Sekertaris","ya",2,2007);
+        Pekerjatetap9.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatetap10 = new PekerjaTetap("Sri",1451,"OB","ya",3,2000);
+        Pekerjatetap10.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatidaktetap = new PekerjaTidakTetap("Ahmad", 2472,"Security","tidak",0,2014);
+        Pekerjatidaktetap.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatidaktetap2 = new PekerjaTidakTetap("Deny", 2478,"Teknisi","ya",3,2015);
+        Pekerjatidaktetap2.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatidaktetap3 = new PekerjaTidakTetap("Sari", 2474,"Sekertaris","ya",2,2013);
+        Pekerjatidaktetap3.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatidaktetap4 = new PekerjaTidakTetap("Sinta",2476,"Sekertaris","tidak",0,2014);
+        Pekerjatidaktetap4.Tampilan();
+        System.out.println("=============================");
+        Employee Pekerjatidaktetap5 = new PekerjaTidakTetap("Rendy",2475,"Teknisi","iya",2,2015);
+        Pekerjatidaktetap5.Tampilan();
+        System.out.println("=============================");
+    }  
 }
