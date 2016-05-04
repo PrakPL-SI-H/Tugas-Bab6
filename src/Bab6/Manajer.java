@@ -2,14 +2,14 @@ package Bab6;
 
 public class Manajer extends Employee {
 
-    public int Gaji;
+    public int Gaji = GajiPokokManajer;
     public int LamaKerja;
 
     public Manajer(String Nama, String Jabatan, String Id, String Istri, int Anak, int Tahun) {
         super(Nama, Jabatan, Id, Istri, Anak, Tahun);
     }
 
-    public void Tunjangan() {
+    public void GajiKotor() {
         LamaKerja = 2016 - Tahun;
         if (LamaKerja < 5) {
             Gaji = GajiPokokManajer;
@@ -32,5 +32,6 @@ public class Manajer extends Employee {
         } else {
             Gaji += (Gaji * (0.1 / 100));
         }
+        System.out.println("Gaji                    : " + Gaji);
     }
 }
