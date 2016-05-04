@@ -27,8 +27,23 @@ public class MainDataPerusahaan {
         System.out.print("Jumlah Data Yang Ingin Dimasukan : ");
         int ndata = in.nextInt();
         System.out.println();
-        
-        
-
+        for (int i = 0; i < ndata; i++) {
+            System.out.println("\t==============DATA KE-" + (i + 1)+"==============");
+            System.out.print("ID Kerja                             : ");
+            String id = in.next();
+            System.out.print("Nama Pegawai                         : ");
+            String name = in.next();
+            System.out.print("Jabatan                              : ");
+            String jab = in.next();
+            System.out.print("Lama Sudah Bekerja(Tahun)            : ");
+            int thn = in.nextInt();
+            System.out.print("Lama Jam Kerja                       : ");
+            int jam = in.nextInt();
+            System.out.print("Status Pernikahan(cerai/kawin/belum) : ");
+            String status = in.next();
+            System.out.print("Jumlah Anak                          : ");
+            int anak = in.nextInt();
+            //seleksi kondisi sesuai dengan jabatannya:
+            
     }
-}
+}}
