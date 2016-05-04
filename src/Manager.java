@@ -12,6 +12,10 @@ public class Manager extends Employee {
         super(nama, jabatan, id, status, anak, thn);
         gaji = 5000000; //gaji default manager =5000000
     }
+//penentu jumlah bonus merupakan tahun,status,dan anak
+    public void setBonus(int thn, String status, int anak) {
+        
+    }
 }
 
 
