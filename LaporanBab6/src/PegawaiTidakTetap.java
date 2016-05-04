@@ -11,5 +11,11 @@ public class PegawaiTidakTetap extends Employee {
     public void setHariKerja(int hari){
         hariKerja = hari;        
     }
+      public int getJamKerja(){
+        return jamKerja;
+    }
+    public int getHariKerja(){
+        return hariKerja;
+    }
     
 }
