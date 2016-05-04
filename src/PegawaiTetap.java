@@ -22,7 +22,19 @@ public class PegawaiTetap extends Employee {
         } else {
             gaji += (gaji * (0.1 / 100)) + (gaji * (0.1 / 100));
         }
-        
+        if ("kawin".equals(status) && anak == 0) {
+            gaji += (gaji * (0.1 / 100));
+        } else if ("kawin".equals(status) && anak < 4) {
+            gaji += (gaji * (0.1 / 100)) + ((gaji * (0.15 / 100)) * anak);
+        } else if ("kawin".equals(status) && anak > 3) {
+            gaji += (gaji * (0.1 / 100)) + ((gaji * (0.15 / 100)) * 3);
+        } else if ("cerai".equals(status) && anak < 4) {
+            gaji += ((gaji * (0.15 / 100)) * anak);
+        } else if ("cerai".equals(status) && anak > 3) {
+            gaji += ((gaji * (0.15 / 100)) * 3);
+        } else {
+            gaji += 0;
+        }
     }
 }
 
