@@ -7,5 +7,11 @@ public class Manager extends Employee {
         super(a, b, c, d, e, f, g);
     }
 
+    public double getTunjanganJabatan() {
+        return 0.1 * (gaji + tahunkerja + tunjangan);
+    }
 
+    public double total() {
+        return super.gajiTotal() + getTunjanganJabatan();
+    }
 }
