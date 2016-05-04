@@ -1,3 +1,4 @@
+package mainemployee;
 
 import java.util.Calendar;
 
@@ -29,4 +30,7 @@ public class Manager extends Employee {
         }
     }
 
-  }
+    public void displayMessage() {
+        System.out.println("Total gajinya adalah " + gaji);
+    }
+}
