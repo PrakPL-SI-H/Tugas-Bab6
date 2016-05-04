@@ -13,6 +13,7 @@ public class MainEmployee {
         PegawaiTetap[] PNS = new PegawaiTetap[100];
         PegawaiTidakTetap[] nonPNS = new PegawaiTidakTetap[100];
 
+        do {
         System.out.println("=====================================================");
         System.out.printf("%35s \n", "PENDATAAN KARYAWAN");
         System.out.println("=====================================================\n");
@@ -21,6 +22,7 @@ public class MainEmployee {
         System.out.print("Masukkan ID Kerja\t: ");
         idKerja = in.nextLine();
 
+        do {
         System.out.println("Jabatan\t: ");
         System.out.println("1. Manager ");
         System.out.println("2. Pegawai Tetap");
@@ -36,7 +38,8 @@ public class MainEmployee {
         } else {
             System.out.println("Inputan Tidak Tersedia, Silahkan Masukkan Lagi");
         }
-
+        } while (piljab != 1 && piljab != 2 && piljab != 3);
+        
         if (piljab == 3) {
             System.out.print("Jumlah Hari Kerja\t: ");
             hariKerja = in.nextInt();
@@ -44,6 +47,7 @@ public class MainEmployee {
             jamKerja = in.nextInt();
         }
 
+        do {
         System.out.println("Memiliki istri? ");
         System.out.println("1. Ya");
         System.out.println("2. Tidak");
@@ -57,7 +61,9 @@ public class MainEmployee {
         } else {
             System.out.println("Inputan Tidak Tersedia, Silahkan Masukkan Lagi");
         }
-
+        } while (pilistri != 1 && pilistri != 2);
+        
+        do {
         System.out.println("Memiliki Anak? ");
         System.out.println("1. Ya");
         System.out.println("2. Tidak");
@@ -72,6 +78,7 @@ public class MainEmployee {
         } else {
             System.out.println("Inputan Tidak Tersedia, Silahkan Masukkan Lagi");
         }
+        } while (pilanak != 1 && pilanak != 2);
 
         System.out.print("Tahun Masuk\t\t: ");
         hireYear = in.nextInt();
@@ -92,6 +99,15 @@ public class MainEmployee {
                 countNonPNS++;
                 break;
         }
+        System.out.println("Ingin memasukkan data lagi?\n"
+                    + "1. Ya\n"
+                    + "2. Tidak");
+            System.out.print("Pilihan anda\t\t: ");
+            pilih = in.nextInt();
+            System.out.println("");
+            in.nextLine();
+        } while (pilih != 2);
+        
         System.out.println("=====================================================");
         System.out.printf("%-12s \n", "\t\tDATA PEKERJA PT FORZA");
         System.out.println("=====================================================\n");

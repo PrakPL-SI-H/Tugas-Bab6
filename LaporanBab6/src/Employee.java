@@ -7,7 +7,7 @@ public class Employee {
     private boolean anak;
     private int hireYear;
     private double bonus;
-    protected double salary;
+    protected final double salary = 3000000;
     private int lamaKerja;
       private double totalSalary;
     private double tunjangan ;

@@ -4,6 +4,7 @@ public class PegawaiTetap extends Employee {
         super(name, idKerja, jabatan, istri, anak, hireYear,jumlahAnak);
     }
     
+     @Override
     public double getSalary(){
         double pegawaiSalary = super.getSalary();
         return pegawaiSalary;
