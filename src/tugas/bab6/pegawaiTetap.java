@@ -30,4 +30,7 @@ public class pegawaiTetap extends Employee {
         }
     }
 
+    public void displayMessage() {
+        System.out.println("Total gajinya adalah " + gaji);
+    }
 }
