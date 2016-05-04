@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class MainEmployee {
     public static void main(String[] args) {
       Scanner in = new Scanner (System.in);
-      String name, idKerja, jabatan;
+      String name, idKerja, jabatan="";
        int piljab = 0, pilih = 0, pilistri = 0, pilanak = 0, jamKerja = 0, hariKerja = 0, jumAnak = 0, hireYear = 0;
+       int countManager = 0, countPNS = 0, countNonPNS = 0;
        boolean ist = true, ank = true;
+        Manager[] man = new Manager[100];
       
        System.out.println("=====================================================");
             System.out.printf("%35s \n","PENDATAAN KARYAWAN");
@@ -72,5 +74,12 @@ public class MainEmployee {
                  System.out.print("Tahun Masuk\t\t: ");
             hireYear = in.nextInt();
                 
+             switch (piljab) {
+                case 1:
+                    man[countManager] = new Manager(name, idKerja, jabatan, ist, ank, hireYear, jumAnak);
+                    countManager++;
+                    break;
+             
+             }
     }  
 }
