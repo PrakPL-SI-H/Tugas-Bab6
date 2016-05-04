@@ -16,7 +16,11 @@ public class MainDataPerusahaan {
     public static void main(String[] args) {
         MainDataPerusahaan go = new MainDataPerusahaan();
         go.showTime();
-        
+        /*Default gaji pegawai:
+         1.Manager               Rp.5000.000,00
+         2.PegawaiTetap          Rp.4000.000,00
+         3.PegawaiTidakTetap     Rp.2000.000,00
+         */
 
     }
 
