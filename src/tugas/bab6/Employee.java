@@ -19,4 +19,31 @@ public class Employee { //superclassnya
         this.tahunMasuk = tahunMasuk;
     }
 
+    public String getNama() {
+        return nama;
+    }
+
+    public String getIdKerja() {
+        return idKerja;
+    }
+
+    public String getJabatan() {
+        return jabatan;
+    }
+
+    public String getPunyaIstri() {
+        return punyaIstri;
+    }
+
+    public int getPunyaAnak() {
+        return punyaAnak;
+    }
+
+    public int getTahunMasuk() {
+        return tahunMasuk;
+    }
+
+    public double getGaji() {
+        return gaji;
+    }
 }
