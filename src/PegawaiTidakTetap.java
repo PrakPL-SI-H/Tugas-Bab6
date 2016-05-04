@@ -14,5 +14,7 @@ public class PegawaiTidakTetap extends Employee {
         gaji = 2000000;//gaji default pegawai tidak tetap=2000000
     }
 
+    public void setBonus(int jam) { //paramter hanya jam sebagai penentu jumlah bonus
+        
     }
-
+}
