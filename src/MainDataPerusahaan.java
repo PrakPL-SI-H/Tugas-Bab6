@@ -48,7 +48,17 @@ public class MainDataPerusahaan {
                 Manager go = new Manager(name, jab, id, status, anak, thn);
                 go.setBonus(thn, status, anak);
                 daftar += "| " + go.getId() + "\t\t|" + go.getNama()+ "\t\t| " + go.getJab() + "\t\t| Rp." + gman+ "\t\t| Rp." + go.getGaji() + "\t|\n";
-            } 
+            } else if ("PegawaiTidakTetap".equals(jab)) {
+                PegawaiTidakTetap go = new PegawaiTidakTetap(name,
+                        jab, id, status, anak, thn);
+                go.setBonus(jam);
+                daftar += "| " + go.getId() + "\t\t|" + go.getNama()+ "\t\t| " + go.getJab() + "\t| Rp."+ pegtt + "\t\t| Rp." + go.getGaji() + "\t|\n";
+            } else if ("PegawaiTetap".equals(jab)) {
+                PegawaiTetap go = new PegawaiTetap(name,
+                        jab, id, status, anak, thn);
+                go.setBonus(thn, status, anak);
+                daftar += "| " + go.getId() + "\t\t|" + go.getNama()+ "\t\t| " + go.getJab() + "\t\t| Rp."+ pegt + "\t\t| Rp." + go.getGaji() + "\t|\n";
+            }
+        }
     }
-}
 }
