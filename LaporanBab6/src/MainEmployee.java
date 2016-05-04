@@ -10,6 +10,7 @@ public class MainEmployee {
        int countManager = 0, countPNS = 0, countNonPNS = 0;
        boolean ist = true, ank = true;
         Manager[] man = new Manager[100];
+         PegawaiTetap[] PNS = new PegawaiTetap[100];
       
        System.out.println("=====================================================");
             System.out.printf("%35s \n","PENDATAAN KARYAWAN");
@@ -79,7 +80,10 @@ public class MainEmployee {
                     man[countManager] = new Manager(name, idKerja, jabatan, ist, ank, hireYear, jumAnak);
                     countManager++;
                     break;
-             
+             case 2:
+                    PNS[countPNS] = new PegawaiTetap(name, idKerja, jabatan, ist, ank, hireYear, jumAnak);
+                    countPNS++;
+                    break;
              }
     }  
 }
