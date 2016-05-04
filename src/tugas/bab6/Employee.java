@@ -1,10 +1,9 @@
-
 package tugasemployee;
 
 public class Employee {
 
     private String nama, idKerja, jabatan, istri, anak;
-    int tahunmasuk, jumlah_anak, tahunkerja, gaji = 20000;
+    int tahunmasuk, jumlah_anak, tahunkerja, gaji = 100000;
     double bonus, tunjangan;
 
     public Employee(String a, String b, String c, String d, String e, int f, int g) {
@@ -23,13 +22,13 @@ public class Employee {
     }
 
     public void hitung(int tahun_masuk) {
-        if (2015 - tahun_masuk < 5) {
+        if (tahunkerja < 5) {
             bonus = 0;
             tunjangan = 0;
-        } else if (2015 - tahun_masuk <= 6 && 2015 - tahun_masuk <= 10) {
+        } else if (tahunkerja <= 6 && tahunkerja <= 10) {
             bonus = 0.05 * gaji * tahunkerja;
             tunjangan = 0;
-        } else if (2015 - tahun_masuk > 10) {
+        } else if (tahunkerja > 10) {
             bonus = 0.1 * gaji * tahunkerja;
             tunjangan = 0.1 * gaji * tahunkerja;
         }
