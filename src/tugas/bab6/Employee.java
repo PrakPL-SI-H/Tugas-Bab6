@@ -34,16 +34,12 @@ class Employee {
         }
 
         if (Istri.equalsIgnoreCase("Y") && Anak.equalsIgnoreCase("Y")) {
-            Tunjangan += (0.1 * (Gaji + Tunjangan)) + ((0.15 * Bnyk_Anak)
-                    * (Tunjangan + Gaji));
-        } else if (Istri.equalsIgnoreCase("Y")
-                && Anak.equalsIgnoreCase("N")) {
+            Tunjangan += (0.1 * (Gaji + Tunjangan)) + ((0.15 * Bnyk_Anak) * (Tunjangan + Gaji));
+        } else if (Istri.equalsIgnoreCase("Y") && Anak.equalsIgnoreCase("N")) {
             Tunjangan += (0.1 * (Gaji + Tunjangan));
-        } else if (Istri.equalsIgnoreCase("N")
-                && Anak.equalsIgnoreCase("Y")) {
+        } else if (Istri.equalsIgnoreCase("N") && Anak.equalsIgnoreCase("Y")) {
             Tunjangan += ((0.15 * Bnyk_Anak) * (Tunjangan + Gaji));
-        } else if (Istri.equalsIgnoreCase("N")
-                && Anak.equalsIgnoreCase("N")) {
+        } else if (Istri.equalsIgnoreCase("N") && Anak.equalsIgnoreCase("N")) {
             Tunjangan = Tunjangan;
         }
     }

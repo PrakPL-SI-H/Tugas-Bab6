@@ -1,12 +1,11 @@
 package tugas.bab6;
 
 public class Non_Pns extends Employee {
+
     private int GajiLembur, MulaiKerja;
 
-    public Non_Pns(String nama, String id, String jabatan, 
-    String istri, String anak, int bnykAnak, int tahunMasuk) {
-        super(nama, id, jabatan, istri, anak, bnykAnak, 
-        tahunMasuk);
+    public Non_Pns(String nama, String id, String jabatan, String istri, String anak, int bnykAnak, int tahunMasuk) {
+        super(nama, id, jabatan, istri, anak, bnykAnak, tahunMasuk);
     }
 
     public void setJamKerja(int a) {
@@ -27,4 +26,3 @@ public class Non_Pns extends Employee {
         return Gaji + getGajiLembur();
     }
 }
-
